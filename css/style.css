@@ -23,7 +23,6 @@ nav {
     position: absolute;
     top: 65px;
     right: 50px;
-    text-decoration: none; 
     font-family: "Verdana";
     font-size: 12px;
 }
@@ -49,4 +48,30 @@ footer {
     background-color: lightgrey;
     position: relative;
 
+}
+
+nav > a {
+    text-decoration: none;
+}
+
+nav a + a {
+    margin-left: 8px;
+    
+}
+
+p {
+    font-family: "TimesNewRoman";
+    font-style: italic;
+    font-size: 30px;
+    color: #a5a5a5;
+    font-weight: lighter;
+    margin-left: 60px;
+    margin-right: auto;
+    width: 720px;
+    margin-top: 70px;
+}
+
+.work {
+    margin: 10px;
+    float: left;
 }
