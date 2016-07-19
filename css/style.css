@@ -25,6 +25,7 @@ nav {
     right: 50px;
     font-family: "Verdana";
     font-size: 12px;
+    color: #adadac;
 }
 
 /*dh logo*/
@@ -45,13 +46,15 @@ img:first-child {
 }
 
 footer {
-    background-color: lightgrey;
+    background-color: none;
     position: relative;
-
+    height: 40px;
+    
 }
 
 nav > a {
     text-decoration: none;
+    color: #adadac;
 }
 
 nav a + a {
@@ -59,7 +62,7 @@ nav a + a {
     
 }
 
-p {
+.about-me {
     font-family: "TimesNewRoman";
     font-style: italic;
     font-size: 30px;
@@ -68,10 +71,105 @@ p {
     margin-left: 60px;
     margin-right: auto;
     width: 720px;
-    margin-top: 70px;
+    margin-top: 300px;
+}
+
+.work-copy {
+    font-family: "TimesNewRoman";
+    font-style: italic;
+    font-size: 25px;
+    color: #a5a5a5;
+    font-weight: lighter;
+    margin-left: 130px;
+    width: 700px;
+    margin-top: 100px;
+}
+
+.blog-copy {
+    font-family: "Verdana";
+    font-style: normal;
+    font-size: 12px;
+    text-align: left;
+    width: 600px;
+    color: #a5a5a5;
 }
 
 .work {
     margin: 10px;
     float: left;
 }
+
+#copyright {
+    font-family: "Verdana";
+    font-style: normal;
+    font-size: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#nobullet li {
+    list-style-type: none;
+}
+
+.resume-head {
+    font-family: "arial";
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-left: 200px;
+    color: #a5a5a5;
+} 
+
+.resume-company {
+    font-family: "Arial";
+    font-style: bold;
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 200px;
+}
+
+.resume-title {
+    font-family: "Arial";
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: 200px;
+}
+
+.resume-dates {
+    font-family: "Arial";
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 200;
+    margin-left: 200px;
+    margin-top: 0;
+}
+
+.technology {
+    font-family: "Arial";
+    font-style: bold;
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 200px;
+}
+
+.expertise {
+    font-family: "Arial";
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 200;
+    margin-left: 200px;
+    margin-top: 0;
+}
+
+img[src*="portrait"] {
+    position: absolute;
+    width: 15%;
+    margin-top: 200px;
+    margin-left: 25px;
+
+    
+}
+
