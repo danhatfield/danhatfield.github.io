@@ -4,37 +4,82 @@ h1.blocktext {
     font-size: 40px;
     color: #a5a5a5;
     font-weight: lighter;
-    margin-left: 130px;
+    margin-left: 100px;
     margin-right: auto;
     width: 700px;
     margin-top: 100px;
 }
 
+.logo img {
+
+    position: relative;
+    left: 100px;
+    top: 18px;
+    height: 45px;
+    bottom: 0px;
+    }
+
 span {
     font-family: "Verdana";
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
-    position: absolute;
-    top: 65px;
-    left: 110px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+
 }
 
-nav {
+.myname {
+    width: 150px;
+    height: 20px;
+    position: relative;
+    bottom: 16px;
+    left:140px;
+
+}
+
+.actualbuttons {
     position: absolute;
-    top: 65px;
-    right: 50px;
+    width: 350px;
+    height: 20px;
+    right: 0px;
+    left: 50%;
+    top: 36px;
+    bottom: 0px;
+    display: inline-block;
+}
+
+.navbartop {
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+nav{
+    position: relative;
+    width: 400px;
     font-family: "Verdana";
-    font-size: 12px;
-    color: #adadac;
+    font-size: 11px;
+    right: 0px;
+    top: 0px;
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color: #adadac;    
+}
+
+
+nav a + a {
+    margin-left: 8px;
+    
 }
 
 /*dh logo*/
 
-img:first-child {
-    position: relative;
-    left: 50px;
-    top: 25px;
-    height: 75px;
+
 }
 
 #labels {
@@ -45,23 +90,6 @@ img:first-child {
     top: -30px
 }
 
-footer {
-    background-color: none;
-    position: relative;
-    height: 40px;
-    
-}
-
-nav > a {
-    text-decoration: none;
-    color: #adadac;
-}
-
-nav a + a {
-    margin-left: 8px;
-    
-}
-
 .about-me {
     font-family: "TimesNewRoman";
     font-style: italic;
@@ -69,11 +97,18 @@ nav a + a {
     color: #a5a5a5;
     font-weight: lighter;
     margin-left: 60px;
-    margin-right: auto;
+    margin-right: 85px;
     width: 720px;
-    margin-top: 300px;
+    margin-top: 180px;
 }
 
+.workcontent {
+    position: relative;
+    width: 800px;
+    height: 1000px;
+    border: 1px red solid;
+    margin-left: 70px;
+}
 .work-copy {
     font-family: "TimesNewRoman";
     font-style: italic;
@@ -95,21 +130,23 @@ nav a + a {
 }
 
 .work {
-    margin: 10px;
+    margin: 0px;
     float: left;
 }
 
-#copyright {
+.copyright #copyright {
+    position: relative;
     font-family: "Verdana";
     font-style: normal;
     font-size: 10px;
-    margin-bottom: 40px;
     text-align: center;
+    bottom: 0;
+    border: 1px red solid;
+    width: 100%;
 }
 
-#nobullet li {
-    list-style-type: none;
-}
+    
+
 
 .resume-head {
     font-family: "arial";
@@ -165,11 +202,66 @@ nav a + a {
 }
 
 img[src*="portrait"] {
-    position: absolute;
+    position: relative;
     width: 15%;
-    margin-top: 200px;
-    margin-left: 25px;
-
-    
+    top: 130px;
+    left: 75px;  
 }
+
+footer {
+    background-color: lightgrey;
+    position: relative;
+    padding-top: 0px;
+    width: 100%;
+    height: 200px;
+    bottom: 0px;
+}
+
+#nobullet li {
+    font-size: 12px;
+    margin-top: 8px
+}
+
+.address #nobullet{
+    list-style-type: none;
+    position: relative;
+    font-family: "Verdana";
+    font-size: 10pt;
+    margin-bottom: 0px;
+    border: 1px red solid;
+    width: 150px;  
+}
+    
+.address {
+    position: relative;
+    width: 200px;
+    border: 1px blue solid;
+    margin-left: 100px;
+    font-size: 10px;
+} 
+
+.whatido li{
+    list-style-type: none;
+    width: 100px;
+    margin-top: 8px;
+    font-family: "Verdana";
+    font-size: 12px;
+}
+
+.whatido {
+    position: relative;
+    width: 200px;
+    border: 1px red solid;
+    float: left;
+    margin: 5px;
+}
+
+.social {
+    position: absolute;
+    width: 400px;
+    text-align: center;
+ 
+}
+
+
 
