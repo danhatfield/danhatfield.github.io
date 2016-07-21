@@ -53,7 +53,11 @@ span {
 .navbartop {
     width: 100%;
     height: 80px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: beige;
+    z-index: 100;
 }
 
 nav{
@@ -83,30 +87,49 @@ nav a + a {
 }
 
 #labels {
-    position: relative;
-    left: 160px;
+    position: absolute;
+    right: 300px;
     width: 600px;
     height: auto;
-    top: -30px
+    top: 30px;
+    border: 1px red solid;
+}
+
+.aboutmebody {
+    height: 600px;
+    width: 100%;
+    border: 1px green solid;
+}
+
+img[src*="portrait"] {
+    position: relative;
+    display: inline-block;
+    width: 10%;
+    left: 95px; 
+    border: 4px darkgrey solid;
+    float: left;
+    margin-top: 160px;
+
 }
 
 .about-me {
-    font-family: "TimesNewRoman";
-    font-style: italic;
-    font-size: 30px;
+    font-family: "Verdana";
+    font-size: 13px;
     color: #a5a5a5;
-    font-weight: lighter;
-    margin-left: 60px;
-    margin-right: 85px;
-    width: 720px;
-    margin-top: 180px;
+    margin-left: 120px;
+    width: 600px;
+    height: 500px;
+    margin-top: 150px;
+    display: inline-block;
+    line-height: 30px;\
+    float: left;
+
 }
 
 .workcontent {
     position: relative;
     width: 800px;
     height: 1000px;
-    border: 1px red solid;
     margin-left: 70px;
 }
 .work-copy {
@@ -125,8 +148,37 @@ nav a + a {
     font-style: normal;
     font-size: 12px;
     text-align: left;
-    width: 600px;
+    width: 400px;
     color: #a5a5a5;
+    padding-top: 5px;
+    line-height: 190%;
+}
+
+#blobtitle {
+    font-size: 15px;
+    color: grey;
+    padding-top: 10px;
+}
+
+.blogbody {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+.insideblogbody {
+    position: relative;
+    width: 400px;
+    height: 800px;
+    left: 20%;
+    top: 100px;
+}
+
+.pears {
+    width: 400px;
+    height: auto;
+    left: 20%;
+    
 }
 
 .work {
@@ -140,9 +192,16 @@ nav a + a {
     font-style: normal;
     font-size: 10px;
     text-align: center;
-    bottom: 0;
-    border: 1px red solid;
+    bottom: 0px;
     width: 100%;
+    
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    margin-left: 70px;
 }
 
     
@@ -201,13 +260,6 @@ nav a + a {
     margin-top: 0;
 }
 
-img[src*="portrait"] {
-    position: relative;
-    width: 15%;
-    top: 130px;
-    left: 75px;  
-}
-
 footer {
     background-color: lightgrey;
     position: relative;
@@ -219,7 +271,7 @@ footer {
 
 #nobullet li {
     font-size: 12px;
-    margin-top: 8px
+    margin-bottom: 8px
 }
 
 .address #nobullet{
@@ -227,41 +279,76 @@ footer {
     position: relative;
     font-family: "Verdana";
     font-size: 10pt;
-    margin-bottom: 0px;
-    border: 1px red solid;
     width: 150px;  
 }
     
 .address {
     position: relative;
     width: 200px;
-    border: 1px blue solid;
-    margin-left: 100px;
     font-size: 10px;
+    margin-left: 40px;
+    float: left;
+    top: 10px;
 } 
 
 .whatido li{
+    position: relative;
+    display: inline-block;
     list-style-type: none;
     width: 100px;
-    margin-top: 8px;
+    margin-bottom: 8px;
     font-family: "Verdana";
     font-size: 12px;
+    
 }
 
 .whatido {
     position: relative;
+    display: inline-block;
     width: 200px;
-    border: 1px red solid;
     float: left;
-    margin: 5px;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 .social {
-    position: absolute;
+    font-family: "Verdana";
+    font-size: 11px;
+    text-decoration: none;
+    position: relative;
+    display: block;
     width: 400px;
     text-align: center;
+    float: right;
+    margin: 20px;
  
 }
 
+.contactbody {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
 
+.contactinside {
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    margin-left: 200px;
+    top: 120px;
+    
+}
+
+.contactinside h1 {
+    font-family: "Verdana";
+    font-size: 12px;
+    color: grey;
+    
+}
+
+.contactinside > p {
+    font-family: "Verdana";
+    font-size: 10px;
+    color: grey;
+}
 
